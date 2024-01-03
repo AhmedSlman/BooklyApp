@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_bookly/core/utils/app_style.dart';
+import '../view/widgets/custom_app_bar.dart';
 import 'best_seller_list_view.dart';
-import 'custom_app_bar.dart';
 import 'featured_list_view.dart';
 
 class HomeViewBody extends StatelessWidget {

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:my_bookly/Features/Splash/presentation/view/widgets/sliding_text.dart';
-import 'package:my_bookly/Features/home/presentation/view/home_view.dart';
+import 'package:my_bookly/Features/splash/presentation/view/widgets/sliding_text.dart';
 import 'package:my_bookly/core/utils/app_assets.dart';
 import 'package:my_bookly/core/utils/app_router.dart';
-import 'package:my_bookly/core/constants/constants.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -32,6 +30,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
     animationController.dispose();
   }
 
+  @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'books_details_section.dart';
+import '../view/widgets/books_details_section.dart';
+import '../view/widgets/similer_books_section.dart';
 import 'custom_book_details_appBar.dart';
-import 'similer_books_section.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
