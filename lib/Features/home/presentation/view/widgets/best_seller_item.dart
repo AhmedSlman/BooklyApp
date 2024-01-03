@@ -7,8 +7,8 @@ import '../../../../../core/utils/app_assets.dart';
 import '../../../../../core/utils/app_style.dart';
 import 'book_rating.dart';
 
-class BestSellerListViewItem extends StatelessWidget {
-  const BestSellerListViewItem({super.key});
+class BookListViewItem extends StatelessWidget {
+  const BookListViewItem({super.key});
 
   @override
   Widget build(BuildContext context) {
