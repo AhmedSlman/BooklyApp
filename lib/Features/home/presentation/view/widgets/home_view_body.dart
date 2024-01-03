@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_bookly/core/utils/app_assets.dart';
 import 'package:my_bookly/core/utils/app_style.dart';
-import 'package:my_bookly/core/utils/constants.dart';
+import 'package:my_bookly/core/constants/constants.dart';
 import 'best_seller_item.dart';
 import 'best_seller_list_view.dart';
 import 'custom_app_bar.dart';

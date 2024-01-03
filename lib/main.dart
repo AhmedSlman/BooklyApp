@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_bookly/core/utils/app_router.dart';
-import 'package:my_bookly/core/utils/constants.dart';
+import 'package:my_bookly/core/constants/constants.dart';
 
 import 'Features/Splash/presentation/view/splash_view.dart';
 

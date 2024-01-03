@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_bookly/core/utils/constants.dart';
+import 'package:my_bookly/core/constants/constants.dart';
 
 abstract class AppStyle {
   static const s14 = TextStyle(
