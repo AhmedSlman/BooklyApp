@@ -33,7 +33,24 @@ class HomeRepoImple implements HomeRepo {
   }
 
   @override
-  Future<Either<Failure, List<BooksModel>>> fetchFeatyredBooks() {
-    throw UnimplementedError();
+  Future<Either<Failure, List<BooksModel>>> fetchFeatyredBooks() async {
+    try {
+      var data = await apiService.get(
+          endPoint: 'volumes?Filtering=free-ebooks&q=subject:movies');
+
+      List<BooksModel> books = [];
+      for (var item in data['items']) {
+        books.add(BooksModel.fromJson(item));
+      }
+      return right(books);
+    } on Exception catch (e) {
+      // ignore: deprecated_member_use
+      if (e is DioError) {
+        return left(ServerFailure.fromDioError(e));
+      }
+      return left(
+        ServerFailure(e.toString()),
+      );
+    }
   }
 }
